@@ -15,32 +15,98 @@
   <body>
 
    <h1 title="text-center">Trivia Game</h1>
+
+<!-- This is where the soundtrack will be linked to -->
 <audio autoplay loop>
         <source src="assets/images/Modest Mussorgsky - Fantasy for Orchestra, A Night on the Bald Mountain (From Natural Born Killers).mp3" type="audio/mp3">
 </audio>
-<form class="q">
-  <h4>1. Which classical composer wrote his name into every piece composed? </h4>
-  <h4>A Bach       B   C   D   E</h4>
-  <input name="test" type="radio" value="inc" />A) 1
-  <input name="test" type="radio" value="ans" />B) 2
-  <input name="test" type="radio" value="inc" />C) 3
-  <input name="test" type="radio" value="inc" />D) 4
-  <input name="test" type="radio" value="inc" />E) 5
-</form>
-<div class="exp">d is right</div>
-<div class="red">d is the correct answer</div>
 
-<form class="q">
-  <h4>1. question 2 </h4>
-  <input name="test" type="radio" value="inc" />A) 1
-  <input name="test" type="radio" value="ans" />B) 2
-  <input name="test" type="radio" value="inc" />C) 3
-  <input name="test" type="radio" value="inc" />D) 4
-  <input name="test" type="radio" value="inc" />E) 5
-</form>
-<br />
-<div class="exp">d is right</div>
-<div class="red">d is the correct answer</div>
+<!-- game panel -->
+
+
+<!-- Display for countdown timer -->
+<p> You have 30 seconds to answer the questions below: <span id="countdowntimer">30 </span> Seconds</p>
+
+
+<!-- queston and answer console -->
+    
+      <form class="q">
+        <h4>1.Q1? </h4>
+        <h4>A   B   C   D   E</h4>
+        <input name="test" type="radio" value="inc" />A) 1
+        <input name="test" type="radio" value="ans" />B) 2
+        <input name="test" type="radio" value="inc" />C) 3
+        <input name="test" type="radio" value="inc" />D) 4
+        <input name="test" type="radio" value="inc" />E) 5
+      </form>
+      <div class="exp">You have answered correctly.</div>
+      <div class="red">Ooops. The answer was B.</div>
+
+
+      <form class="q">
+        <h4>2. Q2</h4>
+          <h4>A   B   C   D   E</h4>
+        <input name="test" type="radio" value="inc" />A) 1
+        <input name="test" type="radio" value="inc" />B) 2
+        <input name="test" type="radio" value="inc" />C) 3
+        <input name="test" type="radio" value="ans" />D) 4
+        <input name="test" type="radio" value="inc" />E) 5
+      </form>
+      <br />
+      <div class="exp">You have answered correctly</div>
+      <div class="red">Ooops. The answer was D</div>
+
+      
+      <form class="q">
+        <h4>3. Q3 </h4>
+          <h4>A   B   C   D   E</h4>
+        <input name="test" type="radio" value="ans" />A) 1
+        <input name="test" type="radio" value="inc" />B) 2
+        <input name="test" type="radio" value="inc" />C) 3
+        <input name="test" type="radio" value="inc" />D) 4
+        <input name="test" type="radio" value="inc" />E) 5
+      </form>
+      <br />
+      <div class="exp">You have answered correctly</div>
+      <div class="red">Ooops. The answer was A</div>
+
+      
+      <form class="q">
+        <h4>4. Q4</h4>
+          <h4>A   B   C   D   E</h4>
+        <input name="test" type="radio" value="inc" />A) 1
+        <input name="test" type="radio" value="inc" />B) 2
+        <input name="test" type="radio" value="inc" />C) 3
+        <input name="test" type="radio" value="inc" />D) 4
+        <input name="test" type="radio" value="ans" />E) 5
+      </form>
+      <br />
+      <div class="exp">You have answered correctly</div>
+      <div class="red">Ooops. The answer was E</div>
+
+      
+      <form class="q">
+        <h4>5. Q5</h4>
+          <h4>A   B   C   D   E</h4>
+        <input name="test" type="radio" value="inc" />A) 1
+        <input name="test" type="radio" value="inc" />B) 2
+        <input name="test" type="radio" value="ans" />C) 3
+        <input name="test" type="radio" value="inc" />D) 4
+        <input name="test" type="radio" value="inc" />E) 5
+      </form>
+      <br />
+      <div class="exp">You have answered correctly</div>
+      <div class="red">Ooops. The answer was B</div>
+<script type="text/javascript">
+    var timeleft = 30;
+    var gameTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(gameTimer);
+    },1000);
+</script>;
+  
 
     
 

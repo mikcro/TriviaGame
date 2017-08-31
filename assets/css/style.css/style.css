@@ -1,5 +1,5 @@
 body {
-  background-image: url(../../images/library.jpg);
+  background-image: /*url(../../images/library.jpg);*/
   height: 960px;
   width: 100%;
   background-size: 100% 100%;
@@ -39,7 +39,7 @@ h3{
   color: white;
   background-color: chocolate;
 }
-#question{font-family: 'Passion One', cursive;
+/*#question{font-family: 'Passion One', cursive;
 color:#D81C16;
 font-size:35px;
 text-shadow: -1px 0 #FEC551, 0 1px #FEC551, 1px 0 #FEC551, 0 -1px #FEC551;
@@ -51,7 +51,7 @@ width: 80%;
 padding-top: 10px;
 padding-bottom: 10px;
 background-color: chocolate;
-
+*/
 }
 
 .clockSpot{
@@ -60,7 +60,7 @@ background-color: chocolate;
 }
 }
 
-#score-block {
+/*#score-block {
   width: 250px;
   height: 150px;
   padding: 6px;
@@ -90,4 +90,4 @@ background-color: chocolate;
 #score-number {
   font-size: 10vmin;
 }
-
+*/
