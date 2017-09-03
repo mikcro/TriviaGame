@@ -1,5 +1,5 @@
 body {
-  background-image: /*url(../../images/library.jpg);*/
+  background-image: url(../../images/library.jpg);
   height: 960px;
   width: 100%;
   background-size: 100% 100%;
@@ -21,14 +21,22 @@ h1{
   
 }
 
+p{
+font-size: 4vmin;
+color:#57ebf6;
+background-color: black;
+
+
+}
+
 h2{
   text-align: center;
   color: white;
-  font-size: 4vmin;
+  font-size: 50px;
   width: 600px;
   margin-bottom: 10px;
   color: white;
-  background-color: chocolate;
+  background-color: #873C23;
 }
 h3{
   text-align: center;
@@ -37,57 +45,84 @@ h3{
   width: 600px;
   margin-bottom: 10px;
   color: white;
-  background-color: chocolate;
+  background-color: #873C23;
 }
-/*#question{font-family: 'Passion One', cursive;
-color:#D81C16;
-font-size:35px;
-text-shadow: -1px 0 #FEC551, 0 1px #FEC551, 1px 0 #FEC551, 0 -1px #FEC551;
-position:relative;
-margin:0 auto;
-display:block;
-top:-82px;
-width: 80%;
-padding-top: 10px;
-padding-bottom: 10px;
-background-color: chocolate;
-*/
+h4{
+  text-align: center;
+  color: white;
+  font-size: 4vmin;
+  width: 600px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #873C23;
+
+
+
+CSS for stopwatch
+/*body { /* Visual */
+  background: black;
+}
+#container {
+background-color: #873C23;
+margin: center;
+
+}
+#q {
+background-color: c#873C23;
+font-size: 4vmin;
+
+
+}
+#form {
+font-size: 4vmin;
+
+
 }
 
-.clockSpot{
-  height: 40px;
+#display {
+  font-family: monospace;
+  width:500px;
+  float: center;
+  font-size: 80px;
+  color: #6304d8;
+  margin: center;
+
+  /* Typography */
+  text-align: center;
+
+  /* Visual */
+  background: black;
+}
+#questions {
+background-color: #873C23;
+width: 650px;
+align-self: center
 
 }
+#wrapper {
+  /* Box-model */
+  width: 500px;
+  float: center;
+
+  /* Positioning */
+  margin: 0px auto 0;
 }
 
-/*#score-block {
+#buttons {  Typography 
+  text-align: center;
+  background-color: #CACE63;
   width: 250px;
-  height: 150px;
-  padding: 6px;
-  color: red;
-  background-color: ##6fdb93;
+
 }
 
-#score-title {
-  width: 225px;
-  padding: 6px;
-  margin-bottom: 10px;
-  color: #ad87db;
-  background-color: ##6fdb93;
-}
-#win-block {
-  height: 100px;
-  padding:3px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  font-size: 3vmin;
-  color: #feffc6;
-  background-color: ##7237ba;
+button {
+  width: 50px;
+
+  /* Box-model */
+  height: 50px;
 }
 
-
-
-#score-number {
-  font-size: 10vmin;
+#laps {
+  
 }
 */

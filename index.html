@@ -11,6 +11,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css/style.css">
     
+    
   </head>
   <body>
 
@@ -23,93 +24,99 @@
 
 <!-- game panel -->
 
-
+<div class="Container">
 <!-- Display for countdown timer -->
-<p> You have 30 seconds to answer the questions below: <span id="countdowntimer">30 </span> Seconds</p>
+<p> You have 25 seconds to answer each of the questions below: </p>
 
 
-<!-- queston and answer console -->
+  <div id="wrapper">
+
+        <div id="display">02:00</div>
+
+        <!-- Div containing our stopwatch controls -->
+        <div id="buttons">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+          <button id="lap">Lap</button>
+        </div>
+
+        <div id="laps"></div>
+
+      </div>
+
+  <!-- queston and answer console -->
+      <div id="questions">
+        <form class="q">
+          <h3>1.He had a phobia of the number 13. He died 7/13/51 </h3>
+          <input name="test" type="radio" value="inc" />Gershwin   ) 
+          <input name="test" type="radio" value="ans" />Schoenberg   ) 
+          <input name="test" type="radio" value="inc" />Pehrlman   ) 
+          <input name="test" type="radio" value="inc" />Shostakovich   ) 
+          <input name="test" type="radio" value="inc" />Ravel   ) 
+        </form>
+        <div class="exp">You have answered correctly.</div>
+        <div class="red">Ooops. The answer was B Schoenberg.</div>
+
+
+        <form class="q">
+          <h4>2.  He had such a fancy with cats he wrote the "Cat Duet" Q2</h4>
+          <input name="test" type="radio" value="inc" />Hayden   ) 
+          <input name="test" type="radio" value="inc" />Liszt   ) 
+          <input name="test" type="radio" value="inc" />Bach   ) 
+          <input name="test" type="radio" value="ans" />Mozart   )
+          <input name="test" type="radio" value="inc" />Handel   ) 
+        </form>
+        <br />
+        <div class="exp">You have answered correctly</div>
+        <div class="red">Ooops. The answer was Mozart</div>
+
+        
+        <form class="q">
+          <h4>3. At 17 he cut the pigtail off another student Q3 </h4>
+          <input name="test" type="radio" value="ans" />Hayden   ) 
+          <input name="test" type="radio" value="inc" />Brahms   )
+          <input name="test" type="radio" value="inc" />Debussy   ) 
+          <input name="test" type="radio" value="inc" />Mahler   )
+          <input name="test" type="radio" value="inc" />Dmitri   ) 
+        </form>
+        <br />
+        <div class="exp">You have answered correctly</div>
+        <div class="red">Ooops. The answer was Hayden</div>
+
+        
+        <form class="q">
+          <h4>4. Who studied to become a Catholic priest but never served as one? Q4</h4>
+          <input name="test" type="radio" value="inc" />Verdi   ) 
+          <input name="test" type="radio" value="inc" />Schumann   ) 
+          <input name="test" type="radio" value="inc" />Wagner   )
+          <input name="test" type="radio" value="inc" />Schostakovich   )
+          <input name="test" type="radio" value="ans" />Liszt   )
+        </form>
+        <br />
+     <div class="exp">You have answered correctly</div>
+        <div class="red">Ooops. The answer was Liszt</div>
+
+        
+        <form class="q">
+          <h4>5. Q5 He was superstitious and would pat a frog figurine before each concert</h4>
+          <input name="test" type="radio" value="inc" />Britten   ) 
+          <input name="test" type="radio" value="inc" />Strausse   )
+          <input name="test" type="radio" value="ans" />Greig   )
+          <input name="test" type="radio" value="inc" />Bizet   ) 
+          <input name="test" type="radio" value="inc" />Copland   ) 
+        </form>
+        <br />
+        <div class="exp">You have answered correctly</div>
+        <div class="red">Ooops. The answer was Greig</div>
+      </div>
+</div> 
+
     
-      <form class="q">
-        <h4>1.Q1? </h4>
-        <h4>A   B   C   D   E</h4>
-        <input name="test" type="radio" value="inc" />A) 1
-        <input name="test" type="radio" value="ans" />B) 2
-        <input name="test" type="radio" value="inc" />C) 3
-        <input name="test" type="radio" value="inc" />D) 4
-        <input name="test" type="radio" value="inc" />E) 5
-      </form>
-      <div class="exp">You have answered correctly.</div>
-      <div class="red">Ooops. The answer was B.</div>
+script>
 
-
-      <form class="q">
-        <h4>2. Q2</h4>
-          <h4>A   B   C   D   E</h4>
-        <input name="test" type="radio" value="inc" />A) 1
-        <input name="test" type="radio" value="inc" />B) 2
-        <input name="test" type="radio" value="inc" />C) 3
-        <input name="test" type="radio" value="ans" />D) 4
-        <input name="test" type="radio" value="inc" />E) 5
-      </form>
-      <br />
-      <div class="exp">You have answered correctly</div>
-      <div class="red">Ooops. The answer was D</div>
-
-      
-      <form class="q">
-        <h4>3. Q3 </h4>
-          <h4>A   B   C   D   E</h4>
-        <input name="test" type="radio" value="ans" />A) 1
-        <input name="test" type="radio" value="inc" />B) 2
-        <input name="test" type="radio" value="inc" />C) 3
-        <input name="test" type="radio" value="inc" />D) 4
-        <input name="test" type="radio" value="inc" />E) 5
-      </form>
-      <br />
-      <div class="exp">You have answered correctly</div>
-      <div class="red">Ooops. The answer was A</div>
-
-      
-      <form class="q">
-        <h4>4. Q4</h4>
-          <h4>A   B   C   D   E</h4>
-        <input name="test" type="radio" value="inc" />A) 1
-        <input name="test" type="radio" value="inc" />B) 2
-        <input name="test" type="radio" value="inc" />C) 3
-        <input name="test" type="radio" value="inc" />D) 4
-        <input name="test" type="radio" value="ans" />E) 5
-      </form>
-      <br />
-      <div class="exp">You have answered correctly</div>
-      <div class="red">Ooops. The answer was E</div>
-
-      
-      <form class="q">
-        <h4>5. Q5</h4>
-          <h4>A   B   C   D   E</h4>
-        <input name="test" type="radio" value="inc" />A) 1
-        <input name="test" type="radio" value="inc" />B) 2
-        <input name="test" type="radio" value="ans" />C) 3
-        <input name="test" type="radio" value="inc" />D) 4
-        <input name="test" type="radio" value="inc" />E) 5
-      </form>
-      <br />
-      <div class="exp">You have answered correctly</div>
-      <div class="red">Ooops. The answer was B</div>
-<script type="text/javascript">
-    var timeleft = 30;
-    var gameTimer = setInterval(function(){
-    timeleft--;
-    document.getElementById("countdowntimer").textContent = timeleft;
-    if(timeleft <= 0)
-        clearInterval(gameTimer);
-    },1000);
-</script>;
-  
-
-    
-
+    <!-- Script -->
+    <script type="text/javascript" src="stopwatchSolution.js"></script>
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     
